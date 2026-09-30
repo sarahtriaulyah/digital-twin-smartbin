@@ -8,3 +8,9 @@
 | 3 | Status Tong | Menampilkan kondisi tong seperti kosong, sedang, dan penuh |
 | 4 | Riwayat Data | Menyimpan data monitoring sebelumnya |
 | 5 | Notifikasi | Memberikan peringatan ketika tong hampir penuh |
+
+| Card         | Informasi                             |
+| ------------ | ------------------------------------- |
+| Normal       | Jumlah tong dengan kondisi normal     |
+| Hampir Penuh | Jumlah tong mendekati batas           |
+| Penuh        | Jumlah tong yang sudah melewati batas |
