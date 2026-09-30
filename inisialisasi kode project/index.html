@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartBin Twin - Digital Twin</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            🗑️ SmartBin Twin
+        </div>
+
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#monitoring">Monitoring</a>
+            <a href="#detail">Detail Tong</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-text">
+            <p class="label">DIGITAL TWIN</p>
+
+            <h1>
+                SmartBin Twin
+            </h1>
+
+            <p>
+                Sistem Monitoring Tingkat Kepenuhan
+                dan Kondisi Tong Sampah Secara Digital
+            </p>
+
+            <button onclick="lihatMonitoring()">
+                Lihat Monitoring
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- DASHBOARD -->
+    <main id="dashboard">
+
+        <div class="section-title">
+            <p>DIGITAL TWIN MONITORING</p>
+            <h2>Dashboard SmartBin</h2>
+            <span>
+                Monitoring kondisi tong sampah secara sederhana dan mudah dipahami.
+            </span>
+        </div>
+
+
+        <!-- SUMMARY -->
+        <section class="summary">
+
+            <div class="summary-card">
+                <span>🗑️</span>
+                <h3>1</h3>
+                <p>Total Tong</p>
+            </div>
+
+            <div class="summary-card">
+                <span>📊</span>
+                <h3 id="persentaseSummary">65%</h3>
+                <p>Rata-rata Kepenuhan</p>
+            </div>
+
+            <div class="summary-card">
+                <span>🟢</span>
+                <h3>1</h3>
+                <p>Normal</p>
+            </div>
+
+            <div class="summary-card">
+                <span>🔴</span>
+                <h3>0</h3>
+                <p>Penuh</p>
+            </div>
+
+        </section>
+
+
+        <!-- MONITORING -->
+        <section id="monitoring" class="monitoring">
+
+            <div class="section-title">
+                <p>MONITORING</p>
+                <h2>Kondisi Tong Sampah</h2>
+            </div>
+
+
+            <div class="bin-card">
+
+                <div class="bin-info">
+
+                    <h2>🗑️ Tong Sampah 01</h2>
+
+                    <p>
+                        📍 Lokasi: Kampus Universitas Samudra
+                    </p>
+
+                    <p>
+                        🕒 Update terakhir:
+                        <span id="waktuUpdate">-</span>
+                    </p>
+
+                </div>
+
+
+                <!-- DIGITAL TWIN -->
+                <div class="digital-twin">
+
+                    <div class="bin">
+
+                        <div
+                            class="sampah"
+                            id="sampah">
+                        </div>
+
+                    </div>
+
+                    <p class="digital-label">
+                        DIGITAL TWIN
+                    </p>
+
+                </div>
+
+
+                <!-- CAPACITY -->
+                <div class="capacity">
+
+                    <h3>Tingkat Kepenuhan</h3>
+
+                    <div class="percentage">
+                        <span id="persentase">65</span>%
+                    </div>
+
+                    <div class="progress-container">
+
+                        <div
+                            class="progress"
+                            id="progress">
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="status normal"
+                        id="status">
+                        NORMAL
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DETAIL -->
+        <section id="detail" class="detail">
+
+            <div class="section-title">
+                <p>DETAIL</p>
+                <h2>Informasi Tong</h2>
+            </div>
+
+
+            <div class="detail-grid">
+
+                <div class="detail-item">
+                    <span>Nama Tong</span>
+                    <strong>Tong Sampah 01</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Lokasi</span>
+                    <strong>Kampus</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Kapasitas</span>
+                    <strong>100 Liter</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Kepenuhan</span>
+                    <strong id="detailPersentase">
+                        65%
+                    </strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Status</span>
+                    <strong id="detailStatus">
+                        Normal
+                    </strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Sistem</span>
+                    <strong>SmartBin Twin</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🗑️ SmartBin Twin</h3>
+
+        <p>
+            Digital Twin Monitoring Tong Sampah
+        </p>
+
+        <p>
+            Sprint 1 — RPL Unit 03
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
