@@ -1,92 +1,76 @@
-# 🗑️ DIGITAL TWIN SMART BIN
+<div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Digital%20Twin-Smart%20Bin-00B4D8?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Status-Development-0077B6?style=for-the-badge">
-</p>
+# 🗑️ DIGITAL TWIN
 
-<p align="center">
-  <b>Perancangan Digital Twin untuk Monitoring Kondisi Tong Sampah</b>
-</p>
+### SMARTBIN TWIN
 
----
+**Monitoring Kondisi dan Kepenuhan Tong Sampah Secara Digital**
 
-## 📌 Deskripsi
+<br>
 
-**Digital Twin Smart Bin** merupakan sistem monitoring tong sampah 
-yang digunakan untuk memantau kondisi dan tingkat kepenuhan tong 
-sampah secara digital.
+![Project](https://img.shields.io/badge/PROJECT-DIGITAL%20TWIN-0077B6)
+![Sprint](https://img.shields.io/badge/SPRINT-1-00A6D6)
+![Status](https://img.shields.io/badge/STATUS-DEVELOPMENT-orange)
+![GitHub](https://img.shields.io/badge/GITHUB-REPOSITORY-black)
 
-Sistem ini membantu petugas mengetahui kondisi tong sampah tanpa 
-harus memeriksa secara langsung. Data yang ditampilkan meliputi 
-persentase kepenuhan, status tong, riwayat monitoring, dan notifikasi 
-ketika tong hampir penuh.
+</div>
 
 ---
 
-## 🎯 Tujuan
+<div align="center">
 
-- Memantau tingkat kepenuhan tong sampah.
-- Mengetahui kondisi tong secara lebih cepat.
-- Memberikan informasi ketika tong hampir penuh.
-- Menyimpan riwayat data monitoring.
-- Membantu petugas menentukan waktu pengangkutan sampah.
+# 🗑️ DIGITAL TWIN MONITORING TONG SAMPAH
 
----
+### Sistem Monitoring Tingkat Kepenuhan dan Kondisi Tong Sampah
 
-## ⚙️ Fitur Sistem
+Sistem ini merupakan prototipe **Digital Twin** yang digunakan untuk
+memantau kondisi tong sampah berdasarkan data tingkat kepenuhan.
 
-| No | Fitur | Fungsi |
-|---|---|---|
-| 1 | 📊 Dashboard | Menampilkan kondisi tong secara real-time |
-| 2 | 📈 Monitoring Kapasitas | Menampilkan tingkat kepenuhan tong |
-| 3 | 🗑️ Status Tong | Menampilkan status kosong, sedang, hampir penuh, dan penuh |
-| 4 | 📋 Riwayat Data | Menyimpan data monitoring sebelumnya |
-| 5 | 🔔 Notifikasi | Memberikan peringatan ketika tong hampir penuh |
+Representasi digital digunakan untuk memberikan gambaran kondisi
+tong sampah secara sederhana dan mudah dipahami oleh petugas.
+
+</div>
 
 ---
 
-## 🟢 Status Tong
+## 📡 TENTANG SISTEM
 
-| Status | Keterangan |
-|---|---|
-| 🟢 Normal | Tong masih dalam kondisi normal |
-| 🟡 Hampir Penuh | Tong mendekati batas kapasitas |
-| 🔴 Penuh | Tong sudah mencapai batas kapasitas |
+Tong sampah perlu dipantau agar tidak mengalami kondisi penuh atau meluap.
 
----
+Pada sistem ini, data tingkat kepenuhan diperoleh dari sensor yang
+mengukur jarak permukaan sampah dari bagian atas tong.
 
-## 👥 Anggota Kelompok
+Data tersebut kemudian diolah menjadi **persentase kepenuhan**
+dan ditampilkan pada dashboard sebagai representasi digital.
 
-| No | Nama | Tugas |
-|---|---|---|
-| 1 | Sarah tri aulyah | Project Manager |
-| 2 | Siti Nabila Zuhra | UI/UX Designer |
-| 3 | Riska Shofiyah | Project Setup |
+### Alur Sistem
 
----
-
-## 🛠️ Teknologi
-
-- HTML
-- CSS
-- JavaScript
-- GitHub
-- GitHub Pages
-
----
-
-## 🚀 Cara Menjalankan
-
-1. Clone repository.
-2. Buka folder project.
-3. Jalankan file `index.html`.
-4. Sistem dapat digunakan melalui browser.
-
----
-
-<p align="center">
-  <b>🗑️ DIGITAL TWIN SMART BIN</b>
-  <br>
-  Smart Monitoring for a Cleaner Environment 🌱
-</p>
+```text
+        ┌──────────────────────┐
+        │    TONG SAMPAH       │
+        │       FISIK          │
+        └──────────┬───────────┘
+                   │
+                   ▼
+        ┌──────────────────────┐
+        │       SENSOR         │
+        │ Mengukur jarak sampah│
+        └──────────┬───────────┘
+                   │
+                   ▼
+        ┌──────────────────────┐
+        │   DATA KEPUENUHAN    │
+        │       0 - 100%       │
+        └──────────┬───────────┘
+                   │
+                   ▼
+        ┌──────────────────────┐
+        │    DIGITAL TWIN      │
+        │ Representasi Digital │
+        └──────────┬───────────┘
+                   │
+                   ▼
+        ┌──────────────────────┐
+        │      DASHBOARD       │
+        │ Monitoring Kondisi   │
+        └──────────────────────┘
