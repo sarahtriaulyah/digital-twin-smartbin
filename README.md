@@ -1,81 +1,128 @@
-# 🗑️ Digital Twin Monitoring Tong Sampah Otomatis
+<div align="center">🗑️ SI TONG PINTAR
 
-## 📌 Deskripsi Proyek
+Digital Twin Monitoring Tong Sampah Otomatis
 
-**Digital Twin Monitoring Tong Sampah Otomatis** adalah proyek prototipe yang menerapkan konsep **Digital Twin** untuk memantau tingkat kepenuhan tong sampah secara digital.
+Solusi digital untuk memantau kapasitas tong sampah secara real-time.
 
-Sistem menggunakan data dari sensor untuk mengetahui jarak permukaan sampah dari bagian atas tong. Data tersebut kemudian diolah menjadi **persentase tingkat kepenuhan** dan ditampilkan melalui dashboard sebagai representasi digital dari tong sampah fisik.
+"Status" (https://img.shields.io/badge/Sprint-1%20(Project%20Setup)-2ea44f?style=for-the-badge)
+"Mata Kuliah" (https://img.shields.io/badge/Mata%20Kuliah-Rekayasa%20Perangkat%20Lunak-orange?style=for-the-badge)
+"Platform" (https://img.shields.io/badge/Platform-Web%20Dashboard-blue?style=for-the-badge)
 
-Pada tahap awal, prototipe difokuskan pada **satu tong sampah** dan dapat dikembangkan menjadi sistem monitoring beberapa tong pada tahap berikutnya.
+</div>---
 
----
+✨ Tentang Proyek
 
-## 🎯 Tujuan
+Si Tong Pintar adalah proyek Digital Twin yang dirancang untuk memantau tingkat kepenuhan tong sampah melalui sensor dan dashboard berbasis web.
 
-Proyek ini bertujuan untuk:
+Sistem ini menampilkan representasi digital dari tong sampah fisik sehingga petugas dapat mengetahui kondisi tong tanpa harus memeriksanya secara langsung satu per satu.
 
-- Memantau tingkat kepenuhan tong sampah menggunakan sensor.
-- Mengubah hasil pembacaan sensor menjadi persentase kepenuhan.
-- Menampilkan status kondisi tong secara digital.
-- Menyediakan representasi Digital Twin dari tong sampah fisik.
-- Memberikan indikator ketika tong mendekati penuh atau sudah penuh.
-- Menyediakan dasar pengembangan sistem monitoring beberapa tong pada tahap berikutnya.
+Informasi yang ditampilkan meliputi persentase kepenuhan, status kondisi tong, lokasi tong, dan waktu pembaruan data. Dengan sistem ini, petugas diharapkan dapat mengetahui tong sampah yang hampir penuh atau sudah penuh sehingga pengangkutan sampah dapat dilakukan dengan lebih tepat waktu.
 
----
-
-## 🚀 Fitur
-
-### 1. 📊 Monitoring Tingkat Kepenuhan
-Menampilkan persentase kepenuhan tong berdasarkan data sensor.
-
-### 2. 🚦 Status Kondisi Tong
-Sistem mengelompokkan kondisi tong menjadi:
-
-| Persentase | Status |
-|---|---|
-| 0–74% | 🟢 Normal |
-| 75–89% | 🟠 Hampir Penuh |
-| 90–100% | 🔴 Penuh |
-
-### 3. 🗑️ Visualisasi Digital Twin
-Menampilkan representasi digital tong sampah yang berubah mengikuti tingkat kepenuhan.
-
-### 4. 🔔 Notifikasi
-Memberikan indikator/peringatan ketika tingkat kepenuhan tong mencapai kondisi hampir penuh atau penuh.
-
-### 5. 📜 Riwayat Monitoring
-Menyimpan data perubahan kondisi tong dari waktu ke waktu sebagai fitur pengembangan lanjutan.
+Tujuan utama: membantu meningkatkan efisiensi pemantauan sampah dan mengurangi risiko tong sampah meluap.
 
 ---
 
-## 🏗️ Konsep Sistem
+🎯 Fitur Utama
 
-Alur kerja sistem:
+| Fitur| Deskripsi
+🔐| Login| Memberikan akses kepada pengguna yang berwenang
+📊| Dashboard Monitoring| Menampilkan ringkasan kondisi seluruh tong sampah
+📈| Persentase Kepenuhan| Menampilkan tingkat kepenuhan tong dalam bentuk persentase
+🚦| Status Tong Sampah| Mengelompokkan kondisi menjadi Normal, Hampir Penuh, dan Penuh
+🗑️| Digital Twin| Menampilkan representasi digital kondisi tong sampah
+📍| Detail Tong Sampah| Menampilkan informasi lokasi dan kondisi setiap tong
+🔔| Notifikasi| Direncanakan untuk memberi informasi ketika tong mencapai batas kepenuhan
+🕒| Riwayat Monitoring| Direncanakan untuk menyimpan dan menampilkan data pemantauan sebelumnya
 
-```text
-┌─────────────────┐
-│  Tong Sampah    │
-│     Fisik       │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  Sensor Jarak   │
-└────────┬────────┘
-         │ Data Sensor
-         ▼
-┌─────────────────┐
-│     Backend     │
-│ Pengolahan Data │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│     Database    │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│    Dashboard    │
-│   Digital Twin  │
-└─────────────────┘
+Catatan: fitur dikembangkan secara bertahap sesuai target setiap sprint.
+
+---
+
+🚦 Status Kepenuhan Tong Sampah
+
+Status| Persentase Kepenuhan| Keterangan
+🟢 Normal| 0–59%| Tong masih memiliki ruang yang cukup
+🟡 Hampir Penuh| 60–89%| Tong perlu dipantau dan dijadwalkan untuk pengangkutan
+🔴 Penuh| 90–100%| Tong perlu segera dikosongkan
+
+Ambang batas di atas merupakan rancangan awal dan dapat disesuaikan dengan kebutuhan sistem.
+
+---
+
+📄 Dokumen Sprint 1
+
+No.| Dokumen| Keterangan
+1| 📋 "Project Charter" (perancangan%20proyek/proyek%20charter.md)| Latar belakang, tujuan, ruang lingkup, dan risiko proyek
+2| 🧮 "Perhitungan Function Point" (perancangan%20proyek/Perhitungan%20function%20point.md)| Estimasi ukuran fungsionalitas sistem
+3| 📝 "Product Backlog & Sprint 1 Backlog" (perancangan%20proyek/Product%20Backlog%20%26%20Sprint%201%20backlog.md)| Daftar kebutuhan, user story, prioritas, dan pekerjaan sprint
+4| 🧩 System Design| Rancangan arsitektur dan alur kerja sistem
+5| 🎨 Desain UI/UX| Rancangan antarmuka dan pengalaman pengguna
+
+Sesuaikan tautan dokumen dengan nama file dan folder yang benar di repository GitHub.
+
+---
+
+📁 Struktur Repository
+
+Sitong-pintar/
+├── README.md
+├── perancangan proyek/
+│   ├── proyek charter.md
+│   ├── Perhitungan function point.md
+│   └── Product Backlog & Sprint 1 backlog.md
+├── Desain Dan Arsitektur/
+│   ├── Activity Diagram.md
+│   ├── Sequence Diagram.md
+│   └── UX_UI_Digital_Twin_Tong_Sampah.md
+└── inisialisasi kode proyek/
+    ├── Kerangka Dasar.md
+    ├── index.html
+    ├── style.css
+    └── script.js
+
+Struktur ini merupakan rancangan awal. Folder dan file dapat disesuaikan dengan isi repository yang sebenarnya.
+
+---
+
+⚙️ Cara Kerja Sistem
+
+1. Sensor mengukur jarak antara permukaan sampah dan bagian atas tong.
+2. Data sensor dikirim ke sistem untuk diproses.
+3. Sistem menghitung perkiraan persentase kepenuhan tong.
+4. Dashboard menampilkan kondisi tong dalam bentuk visual digital.
+5. Status diperbarui menjadi Normal, Hampir Penuh, atau Penuh berdasarkan ambang batas yang ditetapkan.
+6. Petugas menggunakan informasi tersebut untuk menentukan prioritas pengangkutan sampah.
+
+Catatan teknis: pada tahap prototipe, data sensor dapat disimulasikan terlebih dahulu sebelum dihubungkan ke perangkat keras.
+
+---
+
+🗓️ Roadmap Pengembangan
+
+- [x] Sprint 1 — Perencanaan, desain, backlog, dan project setup.
+- [ ] Sprint 2 — Pengembangan kerangka dashboard dan logika perhitungan kepenuhan.
+- [ ] Sprint 3 — Visualisasi Digital Twin, detail tong, dan integrasi data sensor.
+- [ ] Sprint 4 — Notifikasi, riwayat monitoring, pengujian, dan Product Release.
+
+Roadmap dapat disesuaikan dengan hasil Sprint Planning dan pembagian tugas kelompok.
+
+---
+
+👥 Tim Pengembang
+
+No.| Nama| NIM| Akun GitHub| Tugas
+1| [Sarah Tri Aulyah| [240504065]| [@sarahtriaulyah]| Project Charter & Project Setup
+2| [Riska Shofiyah]| [240504093]| [@shofiyahriska2]| Product Backlog & System Design
+3| [Siti Nabila Zuhra]| [240504078]| [@nabilazuhra318]| Function Point & Desain UI/UX
+
+Ganti data di atas sesuai nama anggota dan pembagian tugas kelompok.
+
+---
+
+<div align="center">Universitas Samudera
+Program Studi Informatika
+Mata Kuliah Rekayasa Perangkat Lunak · 2026
+
+Si Tong Pintar — Pantau kepenuhan, kelola sampah lebih efisien. ♻️
+
+</div>
