@@ -128,7 +128,7 @@ Sitong-pintar/
 | No. | Nama              | NIM       | Akun GitHub                                            | Tugas                           |
 | --: | ----------------- | --------- | ------------------------------------------------------ | ------------------------------- |
 |   1 | Sarah Tri Aulyah  | 240504065 | [@sarahtriaulyah](https://github.com/sarahtriaulyah)   | Project Charter & Project Setup |
-|   2 | Riska Shofiyah    | 240504093 | [@riskashofiyah](https://github.com/riskashofiyah)     | Product Backlog & System Design |
+|   2 | Riska Shofiyah    | 240504093 | [@riskashofiyah](https://github.com/shofiyahriska2-glich)     | Product Backlog & System Design |
 |   3 | Siti Nabila Zuhra | 240504078 | [@sitinabilazuhra](https://github.com/sitinabilazuhra) | Function Point & Desain UI/UX   |
 
 ---
