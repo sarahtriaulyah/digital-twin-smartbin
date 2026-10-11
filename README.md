@@ -121,7 +121,7 @@ Roadmap dapat disesuaikan dengan hasil Sprint Planning dan pembagian tugas kelom
 | No. | Nama              | NIM       | Akun GitHub                                          | Tugas                           |
 | --- | ----------------- | --------- | ---------------------------------------------------- | ------------------------------- |
 | 1   | Sarah Tri Aulyah  | 240504065 | [@sarahtriaulyah](https://github.com/sarahtriaulyah) | Project Charter & Project Setup |
-| 2   | Riska Shofiyah    | 240504093 | [@shofiyahriska2](https://github.com/shofiyahriska2) | Product Backlog & System Design |
+| 2   | Riska Shofiyah    | 240504093 | [@shofiyahriska2](https://github.com/riskashofiyah) | Product Backlog & System Design |
 | 3   | Siti Nabila Zuhra | 240504078 | [@nabilazuhra318](https://github.com/nabilazuhra318) | Function Point & Desain UI/UX   |
 
 ---
