@@ -20,7 +20,7 @@
 
 Sistem ini menampilkan representasi digital dari tong sampah fisik agar petugas dapat mengetahui kondisi tong tanpa harus memeriksanya satu per satu secara langsung.
 
-Informasi yang direncanakan untuk ditampilkan meliputi persentase kepenuhan, status kondisi, lokasi tong, dan waktu pembaruan data. Dengan informasi tersebut, petugas diharapkan dapat menentukan prioritas pengangkutan sampah secara lebih efektif.
+Informasi yang direncanakan meliputi persentase kepenuhan, status kondisi, lokasi tong, dan waktu pembaruan data. Informasi ini diharapkan membantu petugas menentukan prioritas pengangkutan sampah secara lebih efektif.
 
 **Tujuan proyek:** meningkatkan efisiensi pemantauan dan mengurangi risiko tong sampah meluap.
 
@@ -30,9 +30,9 @@ Informasi yang direncanakan untuk ditampilkan meliputi persentase kepenuhan, sta
 
 | Informasi           | Keterangan                                                |
 | ------------------- | --------------------------------------------------------- |
-| Nama proyek         | SI TONG PINTAR                                            |
-| Metode pengembangan | Scrum                                                     |
-| Tahap saat ini      | Sprint 1 — Project Setup                                  |
+| Nama Proyek         | SI TONG PINTAR                                            |
+| Metode Pengembangan | Scrum                                                     |
+| Tahap Saat Ini      | Sprint 1 — Project Setup                                  |
 | Platform            | Web Dashboard                                             |
 | Fokus Sprint 1      | Perencanaan, desain, dokumentasi, dan inisialisasi proyek |
 
@@ -51,7 +51,7 @@ Informasi yang direncanakan untuk ditampilkan meliputi persentase kepenuhan, sta
 | 🔔 Notifikasi           | Direncanakan untuk memberikan informasi ketika tong penuh      |
 | 🕒 Riwayat Monitoring   | Direncanakan untuk menyimpan data pemantauan sebelumnya        |
 
-*Catatan: fitur dikembangkan secara bertahap sesuai target setiap sprint. Fitur yang direncanakan belum tentu sudah tersedia pada tahap ini.*
+*Catatan: fitur dikembangkan secara bertahap sesuai target setiap sprint. Fitur yang direncanakan belum tentu sudah tersedia.*
 
 ---
 
@@ -63,7 +63,7 @@ Informasi yang direncanakan untuk ditampilkan meliputi persentase kepenuhan, sta
 | 🟡 Hampir Penuh |               60–89% | Tong perlu dipantau dan dijadwalkan untuk pengangkutan |
 | 🔴 Penuh        |              90–100% | Tong perlu segera dikosongkan                          |
 
-*Ambang batas tersebut merupakan rancangan awal dan dapat disesuaikan berdasarkan kebutuhan sistem.*
+*Ambang batas tersebut merupakan rancangan awal dan dapat disesuaikan dengan kebutuhan sistem.*
 
 ---
 
@@ -74,10 +74,10 @@ Informasi yang direncanakan untuk ditampilkan meliputi persentase kepenuhan, sta
 |   1 | [Project Charter](perancangan%20proyek/proyek%20charter.md)                                                  | Latar belakang, tujuan, ruang lingkup, dan risiko proyek      |
 |   2 | [Perhitungan Function Point](perancangan%20proyek/Perhitungan%20function%20point.md)                         | Estimasi ukuran fungsionalitas sistem                         |
 |   3 | [Product Backlog & Sprint 1 Backlog](perancangan%20proyek/Product%20Backlog%20%26%20Sprint%201%20backlog.md) | Daftar kebutuhan, user story, prioritas, dan pekerjaan sprint |
-|   6 | [Desain UI/UX](Desain%20Dan%20Arsitektur/UX_UI_Digital_Twin_Tong_Sampah.md)                                  | Rancangan antarmuka dan pengalaman pengguna                   |
-|   7 | [Kerangka Dasar Program](inisialisasi%20kode%20proyek/Kerangka%20Dasar.md)                                   | Penjelasan struktur awal kode proyek                          |
+|   4 | [Desain UI/UX](Desain%20Dan%20Arsitektur/UX_UI_Digital_Twin_Tong_Sampah.md)                                  | Rancangan antarmuka dan pengalaman pengguna                   |
+|   5 | [Kerangka Dasar Program](inisialisasi%20kode%20proyek/Kerangka%20Dasar.md)                                   | Penjelasan struktur awal kode proyek                          |
 
-*Pastikan nama file dan folder pada tautan sama persis dengan yang ada di repository GitHub.*
+*Pastikan nama file dan folder pada tautan sesuai dengan yang ada di repository GitHub.*
 
 ---
 
@@ -93,8 +93,7 @@ Sitong-pintar/
 ├── Desain Dan Arsitektur/
 │   └── UX_UI_Digital_Twin_Tong_Sampah.md
 └── inisialisasi kode proyek/
-    ├── Kerangka Dasar.md
-    
+    └── Kerangka Dasar.md
 ```
 
 ---
@@ -104,7 +103,7 @@ Sitong-pintar/
 1. Sensor mengukur jarak antara permukaan sampah dan bagian atas tong.
 2. Data sensor dikirim ke sistem untuk diproses.
 3. Sistem menghitung perkiraan persentase kepenuhan tong.
-4. Sistem menentukan status berdasarkan ambang batas yang telah ditetapkan.
+4. Sistem menentukan status berdasarkan ambang batas yang ditetapkan.
 5. Dashboard menampilkan kondisi tong melalui visualisasi Digital Twin.
 6. Petugas menggunakan informasi tersebut untuk menentukan prioritas pengangkutan sampah.
 
@@ -125,11 +124,11 @@ Sitong-pintar/
 
 ## 👥 Tim Pengembang
 
-| No. | Nama              | NIM       | Akun GitHub                                            | Tugas                           |
-| --: | ----------------- | --------- | ------------------------------------------------------ | ------------------------------- |
-|   1 | Sarah Tri Aulyah  | 240504065 | [@sarahtriaulyah](https://github.com/sarahtriaulyah)   | Project Charter & Project Setup |
-|   2 | Riska Shofiyah    | 240504093 | [@riskashofiyah](https://github.com/shofiyahriska2-glich)     | Product Backlog & System Design |
-|   3 | Siti Nabila Zuhra | 240504078 | [@sitinabilazuhra](https://github.com/sitinabilazuhra) | Function Point & Desain UI/UX   |
+| No. | Nama              | NIM       | Akun GitHub                                                        | Tanggung Jawab                  |
+| --: | ----------------- | --------- | ------------------------------------------------------------------ | ------------------------------- |
+|   1 | Sarah Tri Aulyah  | 240504065 | [@sarahtriaulyah](https://github.com/sarahtriaulyah)               | Project Charter & Project Setup |
+|   2 | Riska Shofiyah    | 240504093 | [@shofiyahriska2-glitch](https://github.com/shofiyahriska2-glitch) | Product Backlog & System Design |
+|   3 | Siti Nabila Zuhra | 240504078 | [@nabilazuhra318-design](https://github.com/nabilazuhra318-design) | Function Point & Desain UI/UX   |
 
 ---
 
